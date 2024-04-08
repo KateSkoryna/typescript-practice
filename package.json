@@ -1,16 +1,11 @@
 {
-  "name": "typescript-practice",
+  "name": "typescript-homework-module-2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "web-dev-server --node-resolve --open --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
-  "author": "KATE_SKORYNA <K.SKORYNA@GMAIL.COM>",
+  "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "@web/dev-server": "^0.4.3"
+  "dependencies": {
+    "typescript": "^5.1.5"
   }
 }
