@@ -15,11 +15,12 @@ var Weekend;
     Weekend[Weekend["Saturday"] = 0] = "Saturday";
     Weekend[Weekend["Sunday"] = 1] = "Sunday";
 })(Weekend || (Weekend = {}));
+// Option 1
 function isWeekend(day) {
-    if (WorkingDay[WorkingDay[day]]) {
+    if (day in WorkingDay) {
         return true;
     }
-    else if (Weekend[Weekend[day]]) {
+    else if (day in Weekend) {
         return false;
     }
     throw Error("Write correct day");

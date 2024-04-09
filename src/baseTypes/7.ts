@@ -14,15 +14,26 @@ enum Weekend {
   Saturday,
   Sunday
 }
-  
-  function isWeekend(day: string): boolean | never {
-    if (WorkingDay[WorkingDay[day]]) {
+
+// Option 1
+function isWeekend(day: string): boolean | never {
+    if (day in WorkingDay) {
       return true;
-    } else if (Weekend[Weekend[day]]) {
+    } else if (day in Weekend) {
       return false;
     }
       throw Error("Write correct day")
   }
+  
+//Option 2
+  // function isWeekend(day: string): boolean | never {
+  //   if (WorkingDay[WorkingDay[day]]) {
+  //     return true;
+  //   } else if (Weekend[Weekend[day]]) {
+  //     return false;
+  //   }
+  //     throw Error("Write correct day")
+  // }
 
 
 export { };
